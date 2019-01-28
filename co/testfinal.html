@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice d'auto-&eacute;valuation</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.106 / OpaleExtEmeraude 3.7.000">
+  <meta name="revision" content="2018-11-02 23:31">
+  <link rel="start" href="moduleSC2.html" title="Intelligence artificielle et &eacute;criture num&eacute;rique">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"jo0nkmsj"};
+/*1*/ window.scLoadParams = {destUri:"/co/testfinal.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_emeraudeMgr/emeraudeMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval emeraude">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article eval"><div class="hBk_co "><script type="text/JavaScript">
+var dQ3h1DG2ruf3l2QtDeFIDg_Aeval = {
+
+	fId : "dQ3h1DG2ruf3l2QtDeFIDg",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "init" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "none";
+
+scAssmntMgr.setMode(sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_N_"), "visible");
+this.fRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, this.fRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, this.fRespSession, "attempt");
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+if(this.fRespSession != vLoadRespSession) this.saveResp(this.fRespSession);
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+case "read" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "none";
+
+scAssmntMgr.setMode(sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_N_"), "visible");
+this.fRespSession = null;
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.dQ3h1DG2ruf3l2QtDeFIDg_Aeval_form;
+		switch(this.fCurSeq) {
+case "init" : {
+		this.refreshResult("none");
+
+		break;
+	}
+case "read" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("dQ3h1DG2ruf3l2QtDeFIDg_Aeval");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+dQ3h1DG2ruf3l2QtDeFIDg_Aeval.synch();
+dQ3h1DG2ruf3l2QtDeFIDg_Aeval.computeScore();
+dQ3h1DG2ruf3l2QtDeFIDg_Aeval.saveResp(dQ3h1DG2ruf3l2QtDeFIDg_Aeval.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_S_N4d"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_S_N4f"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_S_N5a")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN1a");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN29");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN38");
+	this.fLabels.push(vLabel);
+	vLabel.sO=2;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN47");
+	this.fLabels.push(vLabel);
+	vLabel.sO=3;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN68");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN77");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN98");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LNa7");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN6d_N9"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN74_N9"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN76_N9")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN6d_N57"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN74_N57"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN76_N57")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN6d_N87"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN74_N87"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN76_N87")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_L")),scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_RN9")),scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_RN57")),scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Aeval", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_RN87"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	}catch(e){console.log(e);}
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = dQ3h1DG2ruf3l2QtDeFIDg_Aeval;
+scOnUnloads[scOnUnloads.length] = dQ3h1DG2ruf3l2QtDeFIDg_Aeval;
+</script><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"></div><div class="response" aria-live="polite"><table id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_N_" class="mtTable"><tr><td class="mtTdBasket"><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_L" class="ddBasket "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_S_N4d" class="ddBasketCatch "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_S_N4f" class="ddBasketCont "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN77" class="mtLabel "><p>AlphaGo</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LNa7" class="mtLabel "><p>C3P0</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN29" class="mtLabel "><p>PicBot</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN47" class="mtLabel "><p>Jarvis</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN1a" class="mtLabel "><p>Akinator</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN68" class="mtLabel "><p>Tai</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN98" class="mtLabel "><p>Terminator</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_LN38" class="mtLabel "><p>Siri</p></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_S_N5a" class="ddBasketIfEmpty "><span>Plus d'&eacute;l&eacute;ments &agrave; cat&eacute;goriser</span></div><div class="ddBasketEnd"></div></div></div></td><td class="mtTdArrow"></td><td class="mtTdDropCont"><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_RN9" class="ddRepArea "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN6d_N9" class="ddDropCatch "><div class="ddDropTi"><p>Syst&egrave;me Expert</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN74_N9" class="ddDropCont "></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN76_N9" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_RN57" class="ddRepArea "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN6d_N57" class="ddDropCatch "><div class="ddDropTi"><p>Machine learning</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN74_N57" class="ddDropCont "></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN76_N57" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_RN87" class="ddRepArea "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN6d_N87" class="ddDropCatch "><div class="ddDropTi"><p>Conscience artificielle</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN74_N87" class="ddDropCont "></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Aeval_NN76_N87" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">1</span><span class="over">/</span><span class="total">1</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="next" href="activite_3.html" target="_self" class="btnNav nextEval" title="Suivant (Fin de l'&eacute;valuation)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">emeraudeMgr.init();tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>

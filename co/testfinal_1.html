@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Solution d'exercice</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.106 / OpaleExtEmeraude 3.7.000">
+  <meta name="revision" content="2018-11-02 23:31">
+  <link rel="start" href="moduleSC2.html" title="Intelligence artificielle et &eacute;criture num&eacute;rique">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"jo0nkmsj"};
+/*1*/ window.scLoadParams = {destUri:"/co/testfinal_1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_emeraudeMgr/emeraudeMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval emeraude">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article result"><div class="hBk_co "><script type="text/JavaScript">
+var dQ3h1DG2ruf3l2QtDeFIDg_Asol = {
+
+	fId : "dQ3h1DG2ruf3l2QtDeFIDg",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "init" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"ddLabel_Right","ddLabel_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "ddLabel_Wrong" : "ddLabel_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "ddLabel_Right" : "ddLabel_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "addClass";
+
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+this.fRespSession = null;
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.dQ3h1DG2ruf3l2QtDeFIDg_Asol_form;
+		switch(this.fCurSeq) {
+case "init" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "init";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("dQ3h1DG2ruf3l2QtDeFIDg_Asol");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_SN44");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+dQ3h1DG2ruf3l2QtDeFIDg_Asol.synch();
+dQ3h1DG2ruf3l2QtDeFIDg_Asol.computeScore();
+dQ3h1DG2ruf3l2QtDeFIDg_Asol.saveResp(dQ3h1DG2ruf3l2QtDeFIDg_Asol.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_S_N6f"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_S_N71"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_S_N7c")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN1a");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN29");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN38");
+	this.fLabels.push(vLabel);
+	vLabel.sO=2;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN47");
+	this.fLabels.push(vLabel);
+	vLabel.sO=3;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN68");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN77");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN98");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_LNa7");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("dQ3h1DG2ruf3l2QtDeFIDg_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN8d_N9"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN94_N9"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN96_N9")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN8d_N57"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN94_N57"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN96_N57")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN8d_N87"), vC = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN94_N87"), sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN96_N87")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_L")),scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_RN9")),scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_RN57")),scDragMgr.getContainers("dQ3h1DG2ruf3l2QtDeFIDg_Asol", sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_RN87"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("dQ3h1DG2ruf3l2QtDeFIDg_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	}catch(e){console.log(e);}
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = dQ3h1DG2ruf3l2QtDeFIDg_Asol;
+scOnUnloads[scOnUnloads.length] = dQ3h1DG2ruf3l2QtDeFIDg_Asol;
+</script><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_A" style="display:none;"><div class="solBody"><div class="score"><h3 class="score_ti"><span>R&eacute;sultat</span></h3><div class="scoreEval " aria-live="polite"><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_SN44"><span></span></div></div></div><div class="sol"><h3 class="sol_ti"><span>Correction</span></h3><table class="mtTable"><tr><td class="mtTdBasketSol"></td><td class="mtTdHeading">Votre r&eacute;ponse</td><td class="mtTdHeading">Solution</td></tr><tr><td class="mtTdBasketSol"><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_L" class="ddBasket "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_S_N6f" class="ddBasketCatch "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_S_N71" class="ddBasketCont "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN77" class="mtLabel "><p>AlphaGo</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN47" class="mtLabel "><p>Jarvis</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN98" class="mtLabel "><p>Terminator</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LNa7" class="mtLabel "><p>C3P0</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN38" class="mtLabel "><p>Siri</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN68" class="mtLabel "><p>Tai</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN29" class="mtLabel "><p>PicBot</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_LN1a" class="mtLabel "><p>Akinator</p></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_S_N7c" class="ddBasketIfEmpty "><span>Plus d'&eacute;l&eacute;ments &agrave; cat&eacute;goriser</span></div><div class="ddBasketEnd"></div></div></div></td><td class="mtTdSol"><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_RN9" class="ddRepArea "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN8d_N9" class="ddDropCatch "><div class="ddDropTi"><p>Syst&egrave;me Expert</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN94_N9" class="ddDropCont "></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN96_N9" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_RN57" class="ddRepArea "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN8d_N57" class="ddDropCatch "><div class="ddDropTi"><p>Machine learning</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN94_N57" class="ddDropCont "></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN96_N57" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_RN87" class="ddRepArea "><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN8d_N87" class="ddDropCatch "><div class="ddDropTi"><p>Conscience artificielle</p></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN94_N87" class="ddDropCont "></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NN96_N87" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div></td><td class="mtTdSol"><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NNa6_N9" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>Syst&egrave;me Expert</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>Akinator</p></div><div class="mtLabelSol"><p>PicBot</p></div><div class="mtLabelSol"><p>Siri</p></div><div class="mtLabelSol"><p>Jarvis</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NNa6_N57" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>Machine learning</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>Tai</p></div><div class="mtLabelSol"><p>AlphaGo</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="dQ3h1DG2ruf3l2QtDeFIDg_Asol_NNa6_N87" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>Conscience artificielle</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>Terminator</p></div><div class="mtLabelSol"><p>C3P0</p></div></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div><div class="explain"><h3 class="explain_ti"><span>Explications</span></h3><div aria-live="polite"><div class="rBk "><p>Aujourd'hui, les syst&egrave;mes experts sont encore bien plus courant que les IA utilisant le machine learning, encore au stade exp&eacute;rimental. La conscience artificiel est pour le moment un concept enti&egrave;rement fictif.</p></div></div></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">1</span><span class="over">/</span><span class="total">1</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="activite_2.html" target="_self" class="btnNav prevEval" title="Pr&eacute;c&eacute;dent (R&eacute;sultats du test)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="activite_4.html" target="_self" class="btnNav nextEval" title="Suivant (Fin du test)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">emeraudeMgr.init();tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>
